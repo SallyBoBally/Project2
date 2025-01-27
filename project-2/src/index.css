@@ -1,4 +1,4 @@
-:root {
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -66,6 +66,7 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+*/
 /* from project 1 */
 body {
   background: linear-gradient(0deg, RGBA(0,0,0,1) 0%, RGBA(200,255,196,1) 100%);
@@ -77,6 +78,18 @@ body {
   margin-bottom: 0px;
   margin-left: 100px;
   margin-right: 100px;
+  /* grid */
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "nav article ads"
+    "nav footer footer";
+  grid-template-rows: 80px 1fr 70px;  
+  grid-template-columns: 20% 1fr 15%;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  height: 100vh;
+  margin: 0;
 
 }
 
@@ -199,3 +212,5 @@ word-wrap: break-word;
   background-color: #45a049;
   transform: scale(1.1);
 }
+
+/* new format */
