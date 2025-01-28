@@ -1,15 +1,37 @@
-import React from 'react'
-import Homepage from './Pages/Homepage/Homepage'
-import './index.css'
-import AppRoute from './Routes/AppRoute'
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'; // Import the routing components
+import './index.css';
+
+// Import page components
+import Home from './Pages/Home/Home';
+import News from './Pages/News/News';
+import Collections from './Pages/Collections/Collections';
+import Shop from './Pages/Shop/Shop';
 
 function App() {
-
   return (
-    <>
-      <AppRoute />
-      <Homepage />
-    </>
+    <Router>
+      <header>
+        <div className="banner">
+          <div className="banner-content">
+            <h1 className="banner-title">Project Two</h1>
+            <nav className="navbar">
+              <ul>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/news">News</Link></li>
+                <li><Link to="/collections">Collections</Link></li>
+                <li><Link to="/shop">Shop</Link></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/news" element={<News />} />
+        <Route path="/collections" element={<Collections />} />
+        <Route path="/shop" element={<Shop />} />
+      </Routes>
+    </Router>
   )
 }
 

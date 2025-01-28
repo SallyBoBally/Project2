@@ -78,8 +78,8 @@ body {
   margin-bottom: 0px;
   margin-left: 100px;
   margin-right: 100px;
-  /* grid */
-  display: grid;
+  /* grid 
+  display: center;
   grid-template-areas: 
     "header header header"
     "nav article ads"
@@ -90,7 +90,7 @@ body {
   grid-column-gap: 10px;
   height: 100vh;
   margin: 0;
-
+*/
 }
 
 .banner {
