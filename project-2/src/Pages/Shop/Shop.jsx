@@ -9,10 +9,7 @@ function Shop({ addToCart }) {
       <div className="col-2 mb-2">
         <div className="card">
           <img
-            src="https://images.freeimages.com/image/thumbs/619/sunny-rainbow-png-delight-5690557.png"
-            className="card-img-top"
-            alt="Card Image"
-          />
+            src="https://images.freeimages.com/image/thumbs/619/sunny-rainbow-png-delight-5690557.png" className="card-img-top" alt="Card Image"/>
           <div className="card-body">
             <h5 className="card-title">Item One</h5>
             <p className="card-text">

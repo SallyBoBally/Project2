@@ -18,7 +18,7 @@ function Cart({ cart }) {
       )}
 
       <div className="mt-3">
-        <Link to="/" className="btn btn-secondary">
+        <Link to="/" className="button">
           Back to Shop
         </Link>
       </div>

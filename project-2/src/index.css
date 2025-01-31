@@ -281,11 +281,25 @@ word-wrap: break-word;
 }
 
 .news-article a {
-  color: #004080;
+  color: #000000;
   text-decoration: none;
   font-weight: bold;
 }
 
-.news-article a:hover {
-  text-decoration: underline;
+.list-group {
+  list-style: none;
+  padding: 0;
+}
+
+.list-group-item {
+  background-color: #fff;
+  padding: 12px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+
+.list-group-item:hover {
+  background-color: #f1f1f1;
 }
