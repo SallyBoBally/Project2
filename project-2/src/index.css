@@ -303,3 +303,9 @@ word-wrap: break-word;
 .list-group-item:hover {
   background-color: #f1f1f1;
 }
+
+.price-text {
+  font-size: 1.4em;
+  color: #555;
+  margin: 0.5rem 0;
+}
